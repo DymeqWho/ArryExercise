@@ -7,9 +7,7 @@ public class IntegerList {
 
     private int i;
 
-
     List<Integer> integerList = new ArrayList<>();
-
 
     public List getList() {
 
@@ -24,11 +22,10 @@ public class IntegerList {
 
     public void getPairList() {
 
-        for (int i = 0; i < integerList.size(); i++) {
+        for (i = 0; i < integerList.size(); i++) {
             int number = integerList.get(i);
             if (number % 2 == 0) {
-                Integer num = number;
-                System.out.println("on index = " + integerList.indexOf(num) + " is number: " + integerList.get(i));
+                System.out.println("on index = " + i + " is number: " + number);
             }
         }
     }
