@@ -9,8 +9,10 @@ public class ListOfStringsMain {
         listOfStrings.add("Lorem");
         listOfStrings.add("ipSum");
         listOfStrings.add("Dolor");
+        listOfStrings.add("kakarekokko");
         listOfStrings.add("sit");
         listOfStrings.add("aMeT");
+        listOfStrings.add("queueueue");
 
         System.out.println("Listy: ");
 
@@ -31,8 +33,16 @@ public class ListOfStringsMain {
         setStringow.add("Ipsum!");
         System.out.println(setStringow);
         int setStringowIlosc = setStringow.size();
-        System.out.println(setStringowIlosc);
+        System.out.println("unikatowe Stringi: " + setStringowIlosc);
 
         //Set nie przyjmuje duplikatów
+
+
+        //comparator
+        System.out.println();
+        System.out.println("sortowanie po długości elementów: ");
+        Collections.sort(listOfStrings, Comparator.comparing(String::length));
+        System.out.println(listOfStrings);
+
     }
 }
